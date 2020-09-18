@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Piano</title>
+  <meta charset="utf-8">
+  <style>
+    button {
+      margin: auto;
+      height: 300px;
+      width: 50px;
+
+    }
+
+    .buttons {
+      padding-top: 10px;
+    }
+  </style>
+  <script>
+    function keyDo() {
+      document.getElementById('do').innerHTML = "Do";
+    }
+    function keyRe() {
+      document.getElementById('re').innerHTML = "Re";
+    }
+    function keyMi() {
+      document.getElementById('mi').innerHTML = "Mi";
+    }
+
+  </script>
+</head>
+
+<body style="text-align: center;">
+  <h1>Piano</h1>
+  <img src="img/keys.jpg" width="150px">
+  <div class="buttons">
+    <button id="do" type="button" onclick="keyDo()"></button>
+    <button id="re" type="button" onclick="keyRe()"></button>
+    <button id="mi" type="button" onclick="keyMi()"></button>
+  </div>
+</body>
+
+</html>
+
+
+<!-- почему при нажатии съезжают кнопки -->
